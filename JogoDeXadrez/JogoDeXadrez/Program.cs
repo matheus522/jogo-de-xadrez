@@ -6,8 +6,8 @@ namespace JogoDeXadrez
     {
         static void Main(string[] args)
         {
-            TabuleiroInfo tab = new TabuleiroInfo(8,8);
-
+            TabuleiroInfo tabuleiro = new TabuleiroInfo(8,8);
+            Tela.ImprimirTabuleiro(tabuleiro);
         }
     }
 }
