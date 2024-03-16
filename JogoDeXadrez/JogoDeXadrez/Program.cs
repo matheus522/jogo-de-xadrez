@@ -6,8 +6,7 @@ namespace JogoDeXadrez
     {
         static void Main(string[] args)
         {
-            Posicao p = new Posicao(3,4);
-            Console.WriteLine(p);
+            TabuleiroInfo tab = new TabuleiroInfo(8,8);
 
         }
     }
