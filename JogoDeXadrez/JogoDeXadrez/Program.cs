@@ -7,14 +7,26 @@ namespace JogoDeXadrez
     {
         static void Main(string[] args)
         {
-            TabuleiroInfo tabuleiro = new TabuleiroInfo(8,8);
 
-            tabuleiro.ColocarPeca(new Torre(Cor.Preta, tabuleiro), new Posicao(0,0));
-            tabuleiro.ColocarPeca(new Torre(Cor.Preta, tabuleiro), new Posicao(1,3));
-            tabuleiro.ColocarPeca(new Rei(Cor.Preta, tabuleiro), new Posicao(2,4));
+            try
+            {
+                TabuleiroInfo tabuleiro = new TabuleiroInfo(8, 8);
+
+                tabuleiro.ColocarPeca(new Torre(Cor.Preta, tabuleiro), new Posicao(0, 0));
+                tabuleiro.ColocarPeca(new Torre(Cor.Preta, tabuleiro), new Posicao(1, 3));
+                tabuleiro.ColocarPeca(new Rei(Cor.Preta, tabuleiro), new Posicao(0, 2));
+                tabuleiro.ColocarPeca(new Rei(Cor.Preta, tabuleiro), new Posicao(9, 2));
 
 
-            Tela.ImprimirTabuleiro(tabuleiro);
+                Tela.ImprimirTabuleiro(tabuleiro);
+
+            }
+            catch (TabuleiroException e)
+            {
+                Console.WriteLine(e.Message);
+            }
+
+
         }
     }
 }
