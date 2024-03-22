@@ -1,3 +1,3 @@
 # jogo-de-xadrez
 
-Este projeto ira criar um jogo de xadrez em C#
+Este projeto cria um jogo de xadrez em C#
