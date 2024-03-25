@@ -49,6 +49,20 @@ namespace JogoDeXadrez.Tabuleiro
             p.Posicao= pos;
         }
 
+        public Peca retirarPeaca(Posicao pos)
+        {
+            if (peca(pos) == null)
+            {
+                return null;
+            }
+            Peca aux = peca(pos);
+            aux.Posicao = null;
+            pecas[pos.Linha,pos.Coluna] = null;
+
+            return aux;
+
+        }
+
 
         public bool posicaoValida(Posicao pos)
         {

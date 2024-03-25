@@ -16,5 +16,10 @@ namespace JogoDeXadrez.Tabuleiro
             this.tabuleiro = tabuleiro;
             this.QuantidadeMovimento = 0;
         }
+
+        public void incrementarMovimento()
+        {
+            QuantidadeMovimento++;
+        }
     }
 }
