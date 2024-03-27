@@ -1,6 +1,8 @@
 ﻿
 
 using JogoDeXadrez.Tabuleiro;
+using JogoDeXadrez.Xadrez;
+using System.Reflection.Metadata.Ecma335;
 
 namespace JogoDeXadrez
 {
@@ -27,6 +29,14 @@ namespace JogoDeXadrez
                 Console.WriteLine();
             }
             Console.WriteLine("  a b c d e f g h");
+        }
+
+        public static PosicaoXadrez lerPosicaoXadrez()
+        {
+            string s = Console.ReadLine();
+            char coluna = s[0];
+            int linha = int.Parse(s[1].ToString());
+            return new PosicaoXadrez(coluna, linha); 
         }
 
         public static void ImprimePeca(Peca peca)

@@ -12,6 +12,7 @@ namespace JogoDeXadrez.Xadrez
         public TabuleiroInfo tab { get; private set; }
         private int Turno;
         private Cor JogadorAtual;
+        public bool terminada {  get; private set; }
 
         public PartidaDeXadrez()
         {
