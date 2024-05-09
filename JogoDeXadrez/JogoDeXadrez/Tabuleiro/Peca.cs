@@ -2,7 +2,7 @@
 
 namespace JogoDeXadrez.Tabuleiro
 {
-    internal class Peca
+    abstract class Peca
     {
         public Posicao Posicao { get; set; }
         public Cor cor { get; protected set; }
@@ -17,9 +17,6 @@ namespace JogoDeXadrez.Tabuleiro
             this.QuantidadeMovimento = 0;
         }
 
-        public void incrementarMovimento()
-        {
-            QuantidadeMovimento++;
-        }
+        public abstract bool[,] movimentosPossiveis();
     }
 }
