@@ -13,7 +13,7 @@ namespace JogoDeXadrez.Xadrez
         private bool podeMover(Posicao pos)
         {
             Peca p = tabuleiro.peca(pos);
-            return p == null || p.cor != this.cor;
+            return p == null || p.cor != cor;
         }
 
         public override bool[,] movimentosPossiveis()

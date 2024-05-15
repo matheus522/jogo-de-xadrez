@@ -25,7 +25,7 @@ namespace JogoDeXadrez.Xadrez
         public void ExcMovimento(Posicao origem, Posicao destino)
         {
             Peca p = tab.retirarPeaca(origem);
-            p.incrementarMovimento();
+            //p.incrementarMovimento();
             Peca PecaCapturada = tab.retirarPeaca(destino);
             tab.ColocarPeca(p, destino);
         }
